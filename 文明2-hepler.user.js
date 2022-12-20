@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         文明2辅助
 // @namespace    http://bmqy.net/
-// @version      1.0.1
-// @description  支持dusays.com平台文明2：自动云端存档...
+// @version      1.0.2
+// @description  默认支持更多平台文明2：自动云端存档，理论支持所有平台，请自行添加试用...
 // @author       bmqy
 // @match        https://game1.dusays.com/*
+// @match        https://g1tyx.github.io/cividlization2/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=dusays.com
 // @grant        GM_addStyle
 // @grant        GM_setValue
@@ -79,7 +80,7 @@
                         }
                     }
                     alert(`共恢复 ${count} 个存档。`);
-                    location.href = '/';
+                    location.href = './';
                 }
             } else {
                 alert('没有云端存档！');
