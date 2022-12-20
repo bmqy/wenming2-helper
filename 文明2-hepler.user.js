@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         文明2辅助
 // @namespace    http://bmqy.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  支持dusays.com平台文明2：自动云端存档...
 // @author       bmqy
 // @match        https://game1.dusays.com/*
@@ -166,8 +166,10 @@
         // 初始化
         init(){
             console.log('已加载自动云端存档...');
-            this.addLoadGistBtn();
-            this.bindAutoSaveToSaveGist();
+            this.checkGithub() && (()=>{
+                this.addLoadGistBtn();
+                this.bindAutoSaveToSaveGist();
+            })();
         },
     }
 
