@@ -1,4 +1,4 @@
-# game1.dusays.com.script
+# Cividlization2
 
 ## 文明 2 辅助
 
